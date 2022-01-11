@@ -33,7 +33,7 @@ body {
 
 .navItems {
     display: flex;
-    gap: 40px;
+    gap: 70px;
     margin-right: 50px;
 }
 
@@ -51,5 +51,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 75px;
+    background-image: url(/src/images/cast.jpeg);
+}
+
+#homePageImage {
+    width: 100%;
+    height: auto;
+    height: auto;
 }

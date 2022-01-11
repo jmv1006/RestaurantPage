@@ -33,18 +33,6 @@ function createHeader() {
             contactButtonDiv.classList = 'navButton';
         }
     };
-};
-
-//<-- Main Info Area -->
-function createMainContent() {
-    //const img = document.createElement('img');
-    //img.src = '../src/images/mexicanfood.jpeg';
-
-    //creates main area container
-    const homePageDescription = document.createElement('div');
-    contentModule.appendChild(homePageDescription).innerText = 'Main Info';
-    homePageDescription.classList = 'homePageMainArea';
-    //contentModule.appendChild(img);
 
     const navChoices = document.querySelectorAll('.navButton');
     for (let j = 0; j < navChoices.length; j++) {
@@ -56,6 +44,16 @@ function createMainContent() {
             this.classList = 'navButton';
         })
     };
+
+};
+
+//<-- Main Info Area -->
+function createMainContent() {
+    //creates main area container
+    const homePageMainContent = document.createElement('div');
+    contentModule.appendChild(homePageMainContent).innerText = 'Main Info';
+    homePageMainContent.classList = 'homePageMainArea';
+    
 };
 
 
