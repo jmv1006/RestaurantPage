@@ -15,8 +15,8 @@ body {
 
 .header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     background-color: #F8F5EB;
     width: 100%;
@@ -28,18 +28,21 @@ body {
 .headerTitle {
     font-size: 25px;
     font-weight: bold;
+    margin-left: 50px;
 }
 
 .navItems {
     display: flex;
-    gap: 175px;
+    gap: 40px;
+    margin-right: 50px;
 }
 
 .navButton {
-    font-style: normal
+    font-size: 20px;
 }
 
 .navButtonHover {
+    font-size: 20px;
     cursor: pointer;
     text-decoration: underline;
 }
