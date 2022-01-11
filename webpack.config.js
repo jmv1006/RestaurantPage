@@ -1,3 +1,4 @@
+const { watch } = require('fs');
 const path = require('path');
 
 module.exports = {
@@ -22,4 +23,5 @@ module.exports = {
           },
       ],
   },
+  watch: false,
 };
