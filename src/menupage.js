@@ -1,14 +1,23 @@
-const contentModule = document.getElementById('content');
-import {createHeader} from './homepage.js';
-import {createFooter} from './homepage.js';
+import {contentModule} from './index.js';
+import {loadActivePage} from './index.js';
 
-
-
-function menuPageLoad() {
-    contentModule.innerText = '';
-    createHeader();
-    createFooter();
+function createMenuPageContent() {
+    const menuPageMainContainer = document.createElement('div');
+    contentModule.appendChild(menuPageMainContainer);
+    menuPageMainContainer.classList = 'PageMainContainer';
+    menuPageMainContainer.innerHTML = 'Menu';
 };
 
+function menuPageLoad() {
+    createMenuPageContent();
+    menuPageEventList();
+};
 
 export {menuPageLoad};
+
+function menuPageEventList() {
+    document.getElementById('homeTabBtn').addEventListener('click', function() {
+        loadActivePage('main');
+    });
+};
+

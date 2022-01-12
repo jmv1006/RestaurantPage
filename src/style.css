@@ -13,11 +13,12 @@ body {
     background-color: #F8F5EB;
 }
 
-.content {
+#content {
     display: flex;
     flex-direction: column;
 }
-.header {
+
+#header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -53,7 +54,8 @@ body {
     text-decoration: underline;
 }
 
-.homePageMainContainer {
+.PageMainContainer {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
