@@ -23,7 +23,6 @@ body {
     height: 100px;
     gap: 30px;
     border: 2px solid black;
-    position: sticky; top: 0;
 }
 
 .headerTitle {
@@ -55,9 +54,20 @@ body {
     flex-direction: column;
 }
 
+#imgContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    margin: none;
+}
+
 #homePageMainImage {
+    display: block;
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
 }
 
 #homePageImgTxt {

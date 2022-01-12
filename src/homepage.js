@@ -54,8 +54,12 @@ function createMainContent() {
     contentModule.appendChild(homePageMainContainer);
     homePageMainContainer.classList = 'homePageMainContainer';
 
+    const imgContainer = document.createElement('div');
+    homePageMainContainer.appendChild(imgContainer);
+    imgContainer.id = 'imgContainer';
+
     const homePageMainImage = document.createElement('img');
-    homePageMainContainer.appendChild(homePageMainImage);
+    imgContainer.appendChild(homePageMainImage);
     homePageMainImage.id = 'homePageMainImage';
     homePageMainImage.src = "../src/images/background.jpg"
 
