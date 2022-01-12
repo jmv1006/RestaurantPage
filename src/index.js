@@ -1,5 +1,11 @@
 import './style.css';
-import {pageLoad} from './homepage.js';
+import {mainPageLoad} from './homepage.js';
+import {menuPageLoad} from './menupage.js';
 
-console.log('min');
-pageLoad();
+
+mainPageLoad();
+
+const menuTab = document.getElementById('menuTabBtn');
+menuTab.addEventListener('click', function() {
+    menuPageLoad();
+});

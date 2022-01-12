@@ -13,6 +13,10 @@ body {
     background-color: #F8F5EB;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+}
 .header {
     display: flex;
     flex-direction: row;
@@ -23,6 +27,8 @@ body {
     height: 100px;
     gap: 30px;
     border: 2px solid black;
+    position: fixed;
+    z-index: 100;
 }
 
 .headerTitle {
@@ -65,9 +71,12 @@ body {
 }
 
 #homePageMainImage {
-    display: block;
-    max-width: 100%;
-    height: auto;
+    display: flex;
+    max-width: 1500px;
+    height: calc(100vh - 55px);
+    max-height: 900px;
+    min-height: 400px;
+    overflow: hidden;
 }
 
 #homePageImgTxt {
@@ -87,7 +96,8 @@ body {
     align-items: center;
     justify-content: flex-start;
     padding-top: 25px;
-    gap:10px;
+    gap:25px;
+    padding-bottom: 50px;
 }
 
 #aboutHeader {
@@ -108,8 +118,8 @@ body {
 #homePageResBtn {
     margin-top: 15px;
     cursor: pointer;
-    width: 280px;
-    height: 55px;
+    width: 40vh;
+    height: 15vh;
     background-color: #242424;
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -118,4 +128,18 @@ body {
 #homePageResBtn:hover {
     cursor: pointer;
     background-color: #454545;
+}
+
+#footer {
+    position: fixed;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 35px;
+    max-height: 35px;
+    background-color: #303030;
+    color: white;
 }

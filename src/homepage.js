@@ -23,14 +23,17 @@ function createHeader() {
             const homeButtonDiv = document.createElement('div')
             headerNavItems.appendChild(homeButtonDiv).innerText = 'Home';
             homeButtonDiv.classList = 'navButton';
+            homeButtonDiv.id = 'homeTabBtn'
         } else if (i == 1) {
             const menuButtonDiv = document.createElement('div')
             headerNavItems.appendChild(menuButtonDiv).innerText = 'Menu';
             menuButtonDiv.classList = 'navButton';
+            menuButtonDiv.id = 'menuTabBtn';
         } else if (i == 2) {
             const contactButtonDiv = document.createElement('div')
             headerNavItems.appendChild(contactButtonDiv).innerText = 'Contact';
             contactButtonDiv.classList = 'navButton';
+            contactButtonDiv.id = 'contactTabBtn';
         }
     };
 
@@ -89,13 +92,24 @@ function createMainContent() {
     homePageInfoContainer.appendChild(reservationButton);
     reservationButton.id = "homePageResBtn";
     reservationButton.innerHTML = 'Make Reservations';
+
 };
 
+function createFooter() {
+    const footerContainer = document.createElement('div');
+    contentModule.appendChild(footerContainer);
+    footerContainer.class = 'footer';
+    footerContainer.id = 'footer';
+    footerContainer.innerHTML = '2021 Jonathan Andrade Valenzuela';
+}
 
 //Loads page
-function pageLoad() {
+function mainPageLoad() {
     createHeader();
     createMainContent();
+    createFooter();
 };
 
-export {pageLoad};
+export {mainPageLoad};
+export {createHeader};
+export {createFooter};
