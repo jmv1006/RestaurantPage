@@ -50,10 +50,15 @@ function createHeader() {
 //<-- Main Info Area -->
 function createMainContent() {
     //creates main area container
-    const homePageMainContent = document.createElement('div');
-    contentModule.appendChild(homePageMainContent).innerText = 'Main Info';
-    homePageMainContent.classList = 'homePageMainArea';
-    
+    const homePageMainContainer = document.createElement('div');
+    contentModule.appendChild(homePageMainContainer);
+    homePageMainContainer.classList = 'homePageMainContainer';
+
+    const homePageMainImage = document.createElement('div');
+    homePageMainContainer.appendChild(homePageMainImage);
+    homePageMainImage.id = 'homePageMainImage';
+    homePageMainImage.style.backgroundImage = "url(../src/images/background.jpeg)"
+
 };
 
 

@@ -23,6 +23,7 @@ body {
     height: 100px;
     gap: 30px;
     border: 2px solid black;
+    position: sticky; top: 0;
 }
 
 .headerTitle {
@@ -47,15 +48,17 @@ body {
     text-decoration: underline;
 }
 
-.homePageMainArea {
+.homePageMainContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/src/images/cast.jpeg);
+    flex-direction: column;
 }
 
-#homePageImage {
+#homePageMainImage {
     width: 100%;
-    height: auto;
-    height: auto;
+    height: 600px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
