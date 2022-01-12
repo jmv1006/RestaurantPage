@@ -1,6 +1,7 @@
 
 const contentModule = document.getElementById('content');
 
+
 //<-- Header -->
 function createHeader() {
     //creates header container
@@ -23,7 +24,7 @@ function createHeader() {
             const homeButtonDiv = document.createElement('div')
             headerNavItems.appendChild(homeButtonDiv).innerText = 'Home';
             homeButtonDiv.classList = 'navButton';
-            homeButtonDiv.id = 'homeTabBtn'
+            homeButtonDiv.id = 'homeTabBtn';
         } else if (i == 1) {
             const menuButtonDiv = document.createElement('div')
             headerNavItems.appendChild(menuButtonDiv).innerText = 'Menu';
