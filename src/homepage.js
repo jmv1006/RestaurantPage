@@ -54,11 +54,15 @@ function createMainContent() {
     contentModule.appendChild(homePageMainContainer);
     homePageMainContainer.classList = 'homePageMainContainer';
 
-    const homePageMainImage = document.createElement('div');
+    const homePageMainImage = document.createElement('img');
     homePageMainContainer.appendChild(homePageMainImage);
     homePageMainImage.id = 'homePageMainImage';
-    homePageMainImage.style.backgroundImage = "url(../src/images/background.jpg)"
-    homePageMainImage.innerHTML = 'Gourmet Dining At Sea'
+    homePageMainImage.src = "../src/images/background.jpg"
+
+    const homePageImageText = document.createElement('div');
+    homePageMainContainer.appendChild(homePageImageText);
+    homePageImageText.id = "homePageImgTxt";
+    homePageImageText.innerHTML = 'Gourmet Dining At Sea'
 
     const homePageInfoContainer = document.createElement('div');
     homePageMainContainer.appendChild(homePageInfoContainer);
