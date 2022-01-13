@@ -145,8 +145,15 @@ body {
     width: 100%;
     min-height: 35px;
     max-height: 35px;
-    background-color: #303030;
+    background-color: #adadad;
     color: white;
+    gap: 5px;
+}
+
+#gitFooterLogo {
+    width: 2%;
+    height: auto;
+    cursor: pointer;
 }
 
 
@@ -201,6 +208,7 @@ body {
     font-size: 15px;
     font-style: italic;
     color: #8a8a8a;
+    text-align: center;
 }
 
 #startersItemContainer {

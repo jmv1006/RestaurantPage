@@ -62,6 +62,16 @@ function createFooter() {
     footerContainer.class = 'footer';
     footerContainer.id = 'footer';
     footerContainer.innerHTML = 'Jonathan Andrade Valenzuela 2022';
+    
+    let gitLogo = document.createElement('img');
+    gitLogo.src = '../src/images/git.png';
+    gitLogo.id = 'gitFooterLogo';
+    footerContainer.appendChild(gitLogo);
+
+    gitLogo.addEventListener('click', function() {
+        location.href = 'https://github.com/jmv1006';
+    })
+    
 }
 
 // <---- Determine Which Page is Loaded ---->
