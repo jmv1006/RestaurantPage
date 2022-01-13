@@ -16,6 +16,8 @@ body {
 #content {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #header {
@@ -60,6 +62,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 55px;
 }
 
 #imgContainer {
@@ -144,4 +147,53 @@ body {
     max-height: 35px;
     background-color: #303030;
     color: white;
+}
+
+
+#menuPageMainContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 55px;
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.menuHeadingContainer {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.menuHeading {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.menuSectionContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#startersItemContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 15px;
+    text-decoration: underline;
+}
+
+#mainCourseItemContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 150px;
+    grid-row-gap: 15px;
+    text-decoration: underline
 }
