@@ -62,7 +62,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 55px;
+    width: 100%;
 }
 
 #imgContainer {
@@ -95,14 +95,14 @@ body {
 
 #homePageInfo {
     width: 100%;
-    height: 200px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding-top: 25px;
     gap:25px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 #aboutHeader {
@@ -156,8 +156,8 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    gap: 55px;
     padding: 50px;
+    gap: 30px;
     border: 2px solid black;
     border-radius: 15px;
     margin-top: 150px;
@@ -180,6 +180,29 @@ body {
     flex-direction: column;
 }
 
+#menuHeaderContainer {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#menuHeader {
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+#menuDesc {
+    font-size: 15px;
+    font-style: italic;
+    color: #8a8a8a;
+}
+
 #startersItemContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -196,4 +219,13 @@ body {
     grid-column-gap: 150px;
     grid-row-gap: 15px;
     text-decoration: underline
+}
+
+#dessertItemContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 85px;
+    grid-row-gap: 15px;
+    text-decoration: underline;
 }

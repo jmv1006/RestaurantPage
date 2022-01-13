@@ -6,6 +6,22 @@ function createMenuPageContent() {
     contentModule.appendChild(menuPageMainContainer);
     menuPageMainContainer.id = 'menuPageMainContainer';
 
+    const menuPageHeaderContainer = document.createElement('div');
+    menuPageMainContainer.appendChild(menuPageHeaderContainer);
+    menuPageHeaderContainer.id = 'menuHeaderContainer'
+
+    const menuPageHeader = document.createElement('div');
+    menuPageHeaderContainer.appendChild(menuPageHeader);
+    menuPageHeader.id = 'menuHeader';
+    menuPageHeader.innerHTML = 'Dinner Menu'
+
+    const menuHeaderDesc = document.createElement('div');
+    menuPageHeaderContainer.appendChild(menuHeaderDesc);
+    menuHeaderDesc.id = 'menuDesc';
+    menuHeaderDesc.innerHTML = `All prices are in USD and do not include
+    gratuity. If you wish to make any altercations, feel free to let your server
+    know.`
+
 //////////////////////////////////////////////////////////////////////////
     //<---- Starters ---->
     const startersContainer = document.createElement('div');
@@ -114,8 +130,50 @@ function createMenuPageContent() {
     //<---- Desserts ---->
     const dessertContainer = document.createElement('div');
     menuPageMainContainer.appendChild(dessertContainer);
-    dessertContainer.id ='dessertContainer';
+    dessertContainer.classList = 'menuSectionContainer'
 
+    const dessertHeadContainer = document.createElement('div');
+    dessertContainer.appendChild(dessertHeadContainer);
+    dessertHeadContainer.classList = 'menuHeadingContainer';
+
+    const dessertHead = document.createElement('div');
+    dessertHeadContainer.appendChild(dessertHead);
+    dessertHead.classList = 'menuHeading';
+    dessertHead.innerHTML = "Dessert";
+
+    const dessertItemsContainer = document.createElement('div');
+    dessertContainer.appendChild(dessertItemsContainer);
+    dessertItemsContainer.id = 'dessertItemContainer';
+
+    for (let i = 0; i < 4; i++) {
+        let dessertItemDiv = document.createElement('div');
+        dessertItemDiv.id = `dessert${i}`;
+        dessertItemsContainer.appendChild(dessertItemDiv);
+    };
+
+    let desserts = [];
+
+    class Desserts {
+        constructor(name, price) {
+            this.name = name;
+            this.price = price;
+        }
+    };
+
+    const dessert1 = new Desserts('Chocolate Cake', '12')
+    desserts.push(dessert1);
+    const dessert2 = new Desserts('French Vanilla Ice Cream', '8')
+    desserts.push(dessert2);
+    const dessert3 = new Desserts('Creme Brulee', '17');
+    desserts.push(dessert3);
+    const dessert4 = new Desserts('Chocolate Flan', '11');
+    desserts.push(dessert4);
+
+    for(let j = 0; j < desserts.length; j++) {
+        let dessertDiv = document.getElementById(`dessert${j}`);
+        dessertDiv.innerHTML = `${desserts[j].name}......${desserts[j].price}`
+
+    };
 
     //<---- Drinks ---->
     const drinksContainer = document.createElement('div');

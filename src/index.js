@@ -61,7 +61,7 @@ function createFooter() {
     contentModule.appendChild(footerContainer);
     footerContainer.class = 'footer';
     footerContainer.id = 'footer';
-    footerContainer.innerHTML = '2021 Jonathan Andrade Valenzuela';
+    footerContainer.innerHTML = 'Jonathan Andrade Valenzuela 2022';
 }
 
 // <---- Determine Which Page is Loaded ---->
