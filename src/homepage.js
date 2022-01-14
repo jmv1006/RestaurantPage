@@ -58,4 +58,7 @@ function mainPageEventList() {
     document.getElementById('menuTabBtn').addEventListener('click', function() {
         loadActivePage('menu');
     });
+    document.getElementById('contactTabBtn').addEventListener('click', function() {
+        loadActivePage('contact');
+    });
 };

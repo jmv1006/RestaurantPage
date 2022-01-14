@@ -1,6 +1,7 @@
 import './style.css';
 import {mainPageLoad} from './homepage.js';
 import {menuPageLoad} from './menupage.js';
+import { contactPageLoad } from './contactpage.js';
 
 const contentModule = document.getElementById('content');
 export {contentModule};
@@ -90,6 +91,12 @@ function loadActivePage(activePage) {
             contentModule.innerText = '';
             createHeader();
             menuPageLoad();
+            createFooter();
+            break;
+        case('contact'):
+            contentModule.innerText = '';
+            createHeader();
+            contactPageLoad();
             createFooter();
             break;
     }

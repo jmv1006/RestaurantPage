@@ -178,7 +178,54 @@ function createMenuPageContent() {
     //<---- Drinks ---->
     const drinksContainer = document.createElement('div');
     menuPageMainContainer.appendChild(drinksContainer);
-    drinksContainer.id = 'drinksContainer';
+    drinksContainer.classList = 'menuSectionContainer';
+
+    const drinksHeadContainer = document.createElement('div');
+    drinksContainer.appendChild(drinksHeadContainer);
+    drinksHeadContainer.classList = 'menuHeadingContainer';
+
+    const drinksHead = document.createElement('div');
+    drinksHeadContainer.appendChild(drinksHead);
+    drinksHead.classList = 'menuHeading';
+    drinksHead.innerHTML = 'Drinks';
+
+    const drinksItemContainer = document.createElement('div');
+    drinksContainer.appendChild(drinksItemContainer);
+    drinksItemContainer.id = 'drinksItemContainer';
+
+    for (let i = 0; i < 6; i++) {
+        let drinksItemDiv = document.createElement('div');
+        drinksItemDiv.id = `drink${i}`;
+        drinksItemContainer.appendChild(drinksItemDiv);
+    };
+
+    let drinks = [];
+
+    class Drink {
+        constructor(name, price) {
+            this.name = name;
+            this.price = price;
+        }
+    };
+
+    const drink1 = new Drink('Soft Drinks', '3')
+    drinks.push(drink1);
+    const drink2 = new Drink('Tap Beer', '7')
+    drinks.push(drink2);
+    const drink3 = new Drink('Bottled Beer', '5')
+    drinks.push(drink3);
+    const drink4 = new Drink('Red Wine', '12')
+    drinks.push(drink4);
+    const drink5 = new Drink('Whiskey', '9')
+    drinks.push(drink5);
+    const drink6 = new Drink('Margarita', '9')
+    drinks.push(drink6);
+
+    for(let i = 0; i < drinks.length; i++) {
+        let drinkDiv = document.getElementById(`drink${i}`);
+        drinkDiv.innerHTML = `${drinks[i].name}......${drinks[i].price}`
+
+    };
 
 };
 
@@ -193,5 +240,9 @@ function menuPageEventList() {
     document.getElementById('homeTabBtn').addEventListener('click', function() {
         loadActivePage('main');
     });
+
+    document.getElementById('contactTabBtn').addEventListener('click', function() {
+        loadActivePage('contact');
+    })
 };
 
