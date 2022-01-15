@@ -43,9 +43,13 @@ function createContactPageContent() {
     const reservationContainerBody = document.createElement('div');
     reservationInfoContainer.appendChild(reservationContainerBody);
     reservationContainerBody.classList = 'contactBody';
-    reservationContainerBody.innerHTML = 'info goes here';
+    reservationContainerBody.innerHTML = `Reservations can be made starting 120 days in advance
+    for Castaway Club members through the Disney Cruise Line website. For all other guests, we allow
+    reservartions starting 60 days in advance. There are a limited number of reservations that are available
+    through Guest Services on a first come first serve basis on the first night of your itinerary. If you have any
+    other questions, feel free to call us at (555)-435-2156.`;
 
-
+    
 
 
 }

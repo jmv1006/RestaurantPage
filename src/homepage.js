@@ -36,14 +36,16 @@ function createMainContent() {
     aboutParagraph.id = "aboutParagraph"
     aboutParagraph.innerHTML = `The Restaurant was created in order to give Disney Cruise Line guests 
     a gourmet dining experience without having to leave the magic. Our chefs from around the world pride 
-    themselves on their world class cuisine that is sure to leave you wanting more. Our cuisine has deep roots
-    in the traditional cuisines of Central & South America, with a modern twist!`
+    themselves on their world class cuisine that is sure to leave you wanting more!`
 
     const reservationButton = document.createElement('button');
     homePageInfoContainer.appendChild(reservationButton);
     reservationButton.id = "homePageResBtn";
-    reservationButton.innerHTML = 'Make Reservations';
+    reservationButton.innerHTML = 'Reservation Information';
 
+    reservationButton.addEventListener('click', function() {
+        loadActivePage('contact');
+    });
 };
 
 //Loads page
