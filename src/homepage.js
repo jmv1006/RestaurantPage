@@ -61,4 +61,8 @@ function mainPageEventList() {
     document.getElementById('contactTabBtn').addEventListener('click', function() {
         loadActivePage('contact');
     });
+
+    document.getElementById('headerTitle').addEventListener('click', function() {
+        loadActivePage('main');
+    })
 };

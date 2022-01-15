@@ -36,10 +36,18 @@ body {
     color: white;
 }
 
-.headerTitle {
+#headerTitle {
     font-size: 25px;
     font-weight: bold;
     margin-left: 50px;
+}
+
+#headerTitle:hover {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 50px;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .navItems {
@@ -265,4 +273,28 @@ body {
     flex-direction: column;
     color: #0f151f;
     background-color: white;
+    gap: 20px;
+    width: 90%;
+}
+
+
+#contactImgContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#contactPageImg {
+    width: 95%;
+    height: auto;
+    border: 2px solid #0f151f;
+}
+
+.contactHeader {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.contactBody {
+
 }

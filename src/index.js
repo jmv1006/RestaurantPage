@@ -18,7 +18,7 @@ function createHeader() {
     //container for header title
     const headerTitle = document.createElement('div')
     homePageHeaderContainer.appendChild(headerTitle).innerHTML = 'The Restaurant';
-    headerTitle.classList = 'headerTitle';
+    headerTitle.id = 'headerTitle';
 
     //container for nav items
     const headerNavItems = document.createElement('div');

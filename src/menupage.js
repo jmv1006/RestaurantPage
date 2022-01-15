@@ -240,9 +240,12 @@ function menuPageEventList() {
     document.getElementById('homeTabBtn').addEventListener('click', function() {
         loadActivePage('main');
     });
-
     document.getElementById('contactTabBtn').addEventListener('click', function() {
         loadActivePage('contact');
     })
+    document.getElementById('headerTitle').addEventListener('click', function() {
+        loadActivePage('main');
+    })
 };
+
 
